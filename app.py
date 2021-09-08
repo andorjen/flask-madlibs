@@ -7,3 +7,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = "secret"
 
 debug = DebugToolbarExtension(app)
+
+@app.get("/")
+def show_form():
+
+    return render_template("questions.html",prompts=silly_story.prompts)
