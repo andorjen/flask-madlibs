@@ -8,7 +8,12 @@ app.config['SECRET_KEY'] = "secret"
 
 debug = DebugToolbarExtension(app)
 
-@app.get("/")
+@app.get('/')
+def show_template_options():
+    """render html that shows a dropdown menu for diffrent madlibs template"""
+    return render_template("home.html")
+
+@app.get("/silly_option")
 def display_mad_libs_prompt():
     #Need more context of name display_mad_libs_prompt
     """Render mad libs form for input"""

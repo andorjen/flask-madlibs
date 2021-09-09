@@ -43,6 +43,18 @@ silly_story = Story(
        {adjective} {noun}. It loved to {verb} with {plural_noun}."""
 )
 
+romance_story = Story(
+    ["place", "noun", "verb", "adjective", "plural_noun"],
+    """This is romantic! Once upon a time, in a long-ago {place}, there lived an exceptionally
+       {adjective} {noun}. It loved to {verb} with {plural_noun}."""
+)
+thriller_story = Story(
+    ["place", "noun", "verb", "adjective", "plural_noun"],
+    """This is scary! Once upon a time, in a long-ago {place}, there lived an exceptionally
+       {adjective} {noun}. It loved to {verb} with {plural_noun}."""
+)
+
+
 # Here's another --- you should be able to swap in app.py to use this story,
 # and everything should still work
 
